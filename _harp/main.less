@@ -1,19 +1,99 @@
-body{
-  font-family: "Helvetica";
-  text-align: center;
-  padding: 50px 20px 0;
-  background: #f4f4f7;
-  color: #444;
-  margin: 0;
+@import "//fonts.googleapis.com/css?family=Lato:300";
+
+body {
+  font-family:Lato, sans-serif;
+  padding-top: 60px;
+  background:url('hbg.png');
+  background-attachment: fixed;
 }
 
-h1{
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+header {
+  height: 50px;
+  background: url('hbg.png');
+  background-attachment: fixed;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: -50%;
+  margin-left: 50%;
+  box-shadow: inset 2px 1px 5px 1px rgba(0,0,0,.4);
+  z-index:999;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+  h1 {
+    position: relative;
+    bottom: 15px;
+    left:50px;
+    display: inline-block;
+  }
+  nav {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    a {
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      background: #2980b9;
+      &:hover {
+        background: #3498db;
+      }
+    }
+  }
 }
 
-h3{
-  font-weight: 300;
+#main {
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+  background: url('mainbg.jpg');
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+  width: 110%;
+  margin-left: -5%;
+  font-weight: 700;
+  background-attachment: fixed;
+  box-shadow:inset 1px 1px 3px 1px rgba(0,0,0,.5);
+  .content {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    background: rgba(0,0,0,.7);
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,1);
+  }
+}
+
+#about {
+  background:url('homebg.png');
+  background-size:cover;
+  color:white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+  width: 110%;
+  margin-left: -5%;
+  min-height: 300px;
+  .boxes {
+    margin: 0 auto;
+    text-align: center;
+    .box {
+      display: inline-block;
+      text-align: center;
+      background: rgba(0,0,0,.7);
+      min-height: 200px;
+      vertical-align: top;
+      padding: 10px;
+      box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
+      border-radius: 3px;
+      margin: 10px;
+      min-width: 300px;
+      ul {
+        list-style-type: none;
+        margin-left:-45px;
+      }
+    }
+  }
 }
